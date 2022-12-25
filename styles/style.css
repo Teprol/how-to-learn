@@ -26,6 +26,7 @@
   max-height: 756px;
   display: flex;
   position: relative;
+  background-color: var(--baseBg-fill);
   /* выше установили ограничения для секции */
 }
 
@@ -33,7 +34,8 @@
   margin: auto 0;
   padding-left: 64px;
   z-index: 1;
-  width: 730px;
+  max-width: 730px;
+  width: 100%;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
@@ -44,9 +46,11 @@
   position: absolute;
   bottom: 30px;
   left: 64px;
-  width: 388px;
+  max-width: 388px;
+  width: 100%;
   line-height: 25px;
   font-size: 18px;
+  z-index: 1;
 }
 
 .header__link {
@@ -106,7 +110,8 @@
 }
 
 .two-columns__brief {
-  width: 175px;
+  max-width: 175px;
+  width: 100%;
   margin: 0;
   line-height: 1.2;
   font-size: 18px;
@@ -125,7 +130,7 @@
 
 .two-columns__paragraph {
   margin: 0;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
 }
 
 .two-columns__paragraph:last-child {
@@ -153,6 +158,8 @@
 
 .section-title_theme_dark {
   color: var(--contrast-font);
+  position: relative;
+  z-index: 1;
 }
 
 /** под заголовок секции */
@@ -168,6 +175,8 @@
 
 .section-subtitle_theme_dark {
   color: var(--contrast-font);
+  position: relative;
+  z-index: 1;
 }
 
 /** обертка контента в секции как таблица */
@@ -217,6 +226,7 @@
   margin-bottom: 20px;
 }
 
+/*? верхний марджин задавать не буду мне так удобнее соблюдать стиль */
 .table__text:last-child {
   margin-bottom: 0;
 }
@@ -225,12 +235,13 @@
 .feynman {
   background: var(--baseBg-fill) url("../images/feynman.png") left bottom
     no-repeat;
-  height: 890px;
+  min-height: 890px;
   position: relative;
 }
 
 .feynman__title {
-  width: 648px;
+  min-width: 648px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   line-height: 1.15;
@@ -280,10 +291,30 @@
 
 /** подвал */
 .footer {
+  box-sizing: border-box;
   padding: 60px 0 40px;
   background-color: var(--baseBg-footer);
   min-height: 350px;
   display: flex;
+}
+
+.footer__columns {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column {
+  padding-bottom: 16px;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 18px;
 }
 
 .footer__author {
@@ -307,6 +338,9 @@
 .footer__column-links {
   display: flex;
   flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer__column-link {
@@ -321,31 +355,7 @@
 }
 
 .footer__social-icon {
-  display: inline-block;
   width: 16px;
   height: 16px;
   margin-right: 10px;
-  vertical-align: middle;
-}
-
-/** блоки для контента в подвале */
-.columns {
-  margin: 0 auto;
-  padding: 0;
-  width: 90%;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-}
-
-.column {
-  padding-bottom: 16px;
-}
-
-.column_content_copyright {
-  flex-basis: 711px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 18px;
 }

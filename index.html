@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Научиться учиться</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
 
   <body>
@@ -23,7 +23,7 @@
           class="header__main-illustration"
           src="./images/header-image.png"
           alt="фрагмент картины Опять двойка"
-          >
+        />
         <div class="header__square-pic"></div>
       </header>
       <main class="content">
@@ -53,7 +53,7 @@
         </section>
         <section class="digits">
           <h2 class="section-title">Цифры и факты</h2>
-          <h3 class="section-subtitle">Про учёбу и мозг</h3>
+          <p class="section-subtitle">Про учёбу и мозг</p>
           <ul class="table">
             <li class="table__cell">
               <h4 class="table__heading">86 миллиардов</h4>
@@ -108,9 +108,9 @@
           <h2 class="section-title section-title_theme_dark">
             Принципы обучения
           </h2>
-          <h3 class="section-subtitle section-subtitle_theme_dark">
+          <p class="section-subtitle section-subtitle_theme_dark">
             от Джоша Кауфмана
-          </h3>
+          </p>
           <ul class="table table_theme_dark">
             <li class="table__cell table__cell_theme_dark">
               <h4 class="table__heading table__heading_theme_dark">1</h4>
@@ -177,49 +177,55 @@
         </section>
       </main>
       <footer class="footer">
-        <ul class="columns">
-          <li class="column column_content_copyright">
+        <div class="footer__columns">
+          <div class="footer__column footer__column_content_copyright">
             <div class="logo logo_place_footer"></div>
             <p class="footer__author">&copy; Виктор Абанькин</p>
-          </li>
-          <li class="column column_content_info">
+          </div>
+          <nav class="footer__column footer__column_content_info">
             <h2 class="footer__column-heading">О Практикуме</h2>
-            <div class="footer__column-links">
-              <a href="#" class="footer__column-link">Главная</a
-              ><a href="#" class="footer__column-link">Концепция</a
-              ><a href="#" class="footer__column-link">Наставники</a>
-            </div>
-          </li>
-          <li class="column column_content_social">
+            <ul class="footer__column-links">
+              <li><a href="#" class="footer__column-link">Главная</a></li>
+              <li><a href="#" class="footer__column-link">Концепция</a></li>
+              <li><a href="#" class="footer__column-link">Наставники</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__column footer__column_content_social">
             <h2 class="footer__column-heading">Соцсети</h2>
-            <div class="footer__column-links">
-              <a href="#" class="footer__column-link">
-                <img
-                  class="footer__social-icon"
-                  src="./images/youtube-icon.svg"
-                  alt=""
-                >
-                YouTube
-              </a>
-              <a href="#" class="footer__column-link">
-                <img
-                  class="footer__social-icon"
-                  src="./images/vk_color_white.svg"
-                  alt=""
-                >
-                ВКонтакте
-              </a>
-              <a href="#" class="footer__column-link">
-                <img
-                  class="footer__social-icon"
-                  src="./images/tiktok-icon.svg"
-                  alt=""
-                >
-                TikTok
-              </a>
-            </div>
-          </li>
-        </ul>
+            <ul class="footer__column-links">
+              <li>
+                <a href="#" class="footer__column-link">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/youtube-icon.svg"
+                    alt=""
+                  />
+                  YouTube
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer__column-link">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/vk_color_white.svg"
+                    alt=""
+                  />
+                  ВКонтакте
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer__column-link">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/tiktok-icon.svg"
+                    alt=""
+                  />
+                  TikTok
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </footer>
     </div>
   </body>
