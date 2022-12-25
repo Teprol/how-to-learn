@@ -36,7 +36,7 @@
   width: 730px;
   line-height: 96px;
   font-size: 102px;
-  font-weight: 600px;
+  font-weight: 600;
 }
 
 .header__subtitle {
@@ -80,10 +80,15 @@
 }
 
 .logo_place_header {
+  background-image: url("../images/logo_place_header.svg");
   position: absolute;
   top: 30px;
   left: 64px;
   z-index: 2;
+}
+
+.logo_place_footer {
+  background-image: url("../images/logo_place_footer.svg");
 }
 
 /**секция описания */
@@ -178,6 +183,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 60px;
+  /*! маргин по бэм нельзя, надеюсь гэпом можно */
 }
 
 .table_theme_dark {
@@ -312,7 +318,8 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-  /* display: flex; */
+  display: flex;
+  align-items: center;
 
 }
 
@@ -322,7 +329,6 @@
   height: 16px;
   margin-right: 10px;
   vertical-align: middle;
-  /*? проще псевдоэлемент before или через флекс можно, иконки это декор */
 }
 
 /** блоки для контента в подвале */

@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Научиться учиться</title>
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
   </head>
 
   <body>
     <div class="page">
       <header class="header">
-        <img
-          class="logo logo_place_header"
-          src="images/logo_place_header.svg"
-          alt="логотип сайта яндекс практикума"
-        />
+        <!--? почему это декор а не img по брифу -->
+        <div class="logo logo_place_header"></div>
         <h1 class="header__title">Научиться учиться</h1>
         <p class="header__subtitle">
           Какие современные и эффективные подходы к обучению вы можете
           использовать в своей жизни?
-          <a class="header__link" href="#">Узнать</a>
+          <a class="header__link" href="#">Узнать &rarr;</a>
         </p>
         <img
           class="header__main-illustration"
-          src="images/header-image.png"
-          alt=""
-        />
+          src="./images/header-image.png"
+          alt="фрагмент картины Опять двойка"
+          >
         <div class="header__square-pic"></div>
       </header>
       <main class="content">
@@ -105,7 +102,7 @@
         <section class="feynman">
           <h2 class="feynman__title">Метод Фейнмана</h2>
           <h3 class="feynman__subtitle">Выучить и не забыть.</h3>
-          <a href="#" class="feynman__link">Подробнее</a>
+          <a href="#" class="feynman__link">Подробнее &rarr;</a>
         </section>
         <section class="kaufman">
           <h2 class="section-title section-title_theme_dark">
@@ -182,12 +179,8 @@
       <footer class="footer">
         <ul class="columns">
           <li class="column column_content_copyright">
-            <img
-              class="logo logo_place_footer"
-              src="images/logo_place_footer.svg"
-              alt="логотип сайта яндекс практикума"
-            />
-            <p class="footer__author">&copy Виктор Абанькин</p>
+            <div class="logo logo_place_footer"></div>
+            <p class="footer__author">&copy; Виктор Абанькин</p>
           </li>
           <li class="column column_content_info">
             <h2 class="footer__column-heading">О Практикуме</h2>
@@ -200,14 +193,30 @@
           <li class="column column_content_social">
             <h2 class="footer__column-heading">Соцсети</h2>
             <div class="footer__column-links">
-              <a href="#" class="footer__column-link"
-                ><img class="footer__social-icon" src="" alt=""></img>YouTube</a
-              ><a href="#" class="footer__column-link"
-                ><img class="footer__social-icon" src="" alt=""></img>ВКонтакте</a
-              ><a href="#" class="footer__column-link"
-                ><img class="footer__social-icon" src="" alt=""></img>TikTok</a
-              >
-              <!--!в брифе span или Img(хотя это не контент)-->
+              <a href="#" class="footer__column-link">
+                <img
+                  class="footer__social-icon"
+                  src="./images/youtube-icon.svg"
+                  alt=""
+                >
+                YouTube
+              </a>
+              <a href="#" class="footer__column-link">
+                <img
+                  class="footer__social-icon"
+                  src="./images/vk_color_white.svg"
+                  alt=""
+                >
+                ВКонтакте
+              </a>
+              <a href="#" class="footer__column-link">
+                <img
+                  class="footer__social-icon"
+                  src="./images/tiktok-icon.svg"
+                  alt=""
+                >
+                TikTok
+              </a>
             </div>
           </li>
         </ul>
