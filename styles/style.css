@@ -33,7 +33,7 @@
 .header__title {
   margin: auto 0;
   padding-left: 64px;
-  z-index: 1;
+  z-index: 2;
   max-width: 730px;
   width: 100%;
   line-height: 96px;
@@ -50,7 +50,7 @@
   width: 100%;
   line-height: 25px;
   font-size: 18px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header__link {
@@ -64,6 +64,7 @@
   right: 0;
   width: 765px;
   height: 608px;
+  z-index: 1;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -74,7 +75,7 @@
   position: absolute;
   right: 0;
   top: 64px;
-  z-index: -1;
+  z-index: 0;
 }
 
 /**лого */
@@ -240,7 +241,7 @@
 }
 
 .feynman__title {
-  min-width: 648px;
+  max-width: 648px;
   width: 100%;
   margin: 0 auto;
   text-align: center;
