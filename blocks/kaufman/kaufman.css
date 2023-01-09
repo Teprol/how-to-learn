@@ -1,0 +1,7 @@
+/** секция принципы обучения */
+.kaufman {
+  padding: 90px 0;
+  background-color: var(--baseBg-footer);
+  overflow: hidden;
+  position: relative;
+}

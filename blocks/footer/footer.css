@@ -1,0 +1,8 @@
+/** подвал */
+.footer {
+  box-sizing: border-box;
+  padding: 60px 0 40px;
+  background-color: var(--baseBg-footer);
+  min-height: 350px;
+  display: flex;
+}
