@@ -1,6 +1,6 @@
 /** секция метод феймона */
 .feynman {
-  background: var(--baseBg-fill) url("/images/feynman.png") left bottom
+  background: var(--baseBg-fill) url("../../images/feynman.png") left bottom
     no-repeat;
   min-height: 890px;
   position: relative;
