@@ -8,3 +8,8 @@
   column-gap: 10px;
   align-items: center;
 }
+
+.footer__column-link:hover {
+  opacity: 0.3;
+  transition: opacity 0.2s;
+}
