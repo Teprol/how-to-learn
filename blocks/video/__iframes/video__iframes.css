@@ -2,11 +2,9 @@
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
-  /* padding: 50px 0 0 0; */
   display: flex;
   column-gap: 20px;
   justify-content: center;
-  position: relative;
   position: relative;
   top: 50px;
   z-index: 1;
