@@ -5,7 +5,8 @@
   font-size: 18px;
   font-weight: normal;
   display: flex;
-  column-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
   align-items: center;
 }
 

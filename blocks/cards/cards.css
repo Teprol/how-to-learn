@@ -4,7 +4,8 @@
   width: 920px;
   list-style-type: none;
   display: flex;
-  column-gap: 100px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
   row-gap: 60px;
   flex-wrap: wrap;
 }

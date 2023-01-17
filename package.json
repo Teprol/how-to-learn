@@ -1,0 +1,26 @@
+{
+  "name": "how-to-learn",
+  "version": "1.0.0",
+  "description": "учебный проект для Яндекс практикума",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prefix": "gulp clean && gulp prefix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Teprol/how-to-learn.git"
+  },
+  "author": "teprol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Teprol/how-to-learn/issues"
+  },
+  "homepage": "https://github.com/Teprol/how-to-learn#readme",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0"
+  },
+  "dependencies": {}
+}
