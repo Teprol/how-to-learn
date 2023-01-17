@@ -1,6 +1,7 @@
 @import url("../vendor/normalize.css");
 
 /** глобальные стили и миксы */
+@import url("../vendor/fonts.css");
 @import url("../vendor/global.css");
 
 /** гл. контейнер */
